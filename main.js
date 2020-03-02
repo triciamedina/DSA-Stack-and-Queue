@@ -34,15 +34,15 @@ const display = function(stack) {
 function main() {
     let starTrek = new Stack();
 
-    starTrek.push('Kirk');
-    starTrek.push('Spock');
-    starTrek.push('McCoy');
-    starTrek.push('Scotty');
+    // starTrek.push('Kirk');
+    // starTrek.push('Spock');
+    // starTrek.push('McCoy');
+    // starTrek.push('Scotty');
 
     // starTrek.pop();
     // starTrek.pop();
 
-    display(starTrek)
+    console.log(isEmpty(starTrek))
 }
 
 main();
