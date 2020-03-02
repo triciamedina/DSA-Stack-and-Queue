@@ -21,17 +21,14 @@ const display = function(stack) {
         return null;
     }
 
-    let list = '';
-    let currentNode;
+    let currentNode = stack.top;
     let nextNode = stack.top;
 
     while (nextNode) {
         currentNode = nextNode;
         nextNode = currentNode.next;
-        list += `${currentNode.data}\n`;
+        console.log(currentNode.data);
     }
-
-    return list;
 }
 
 function main() {
@@ -42,10 +39,10 @@ function main() {
     starTrek.push('McCoy');
     starTrek.push('Scotty');
 
-    starTrek.pop();
-    starTrek.pop();
-    
-    console.log(display(starTrek))
+    // starTrek.pop();
+    // starTrek.pop();
+
+    display(starTrek)
 }
 
 main();
