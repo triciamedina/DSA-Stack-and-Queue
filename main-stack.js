@@ -1,4 +1,4 @@
-const Stack = require('./stack')
+const Stack = require('./stack');
 
 // allows you to look at the top of the stack without removing it
 const peek = function(stack) {
