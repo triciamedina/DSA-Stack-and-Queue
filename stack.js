@@ -31,6 +31,9 @@ class Stack {
         /* In order to remove the top of the stack, you have to point
            the pointer to the next item and that next item becomes the
            top of the stack */
+        if (this.top === null) {
+            return null;
+        }
         const node = this.top;
         this.top = node.next;
         return node.data;
